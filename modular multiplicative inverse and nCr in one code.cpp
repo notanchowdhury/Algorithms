@@ -28,7 +28,7 @@ ll power(ll x, unsigned ll y, unsigned ll m);
 
 ll modInverse(ll a, ll m)
 {
-   // ll g = gcd(a, m);
+
     return power(a, m-2, m);
 }
 
@@ -41,13 +41,6 @@ ll power(ll x, unsigned ll y, unsigned ll m)
 
     return (y%2 == 0)? p : (x * p) % m;
 }
-
-/*ll gcd(ll a, ll b)
-{
-    if (a == 0)
-        return b;
-    return gcd(b%a, a);
-}*/
 
 
 ll  fact[mx+1];
